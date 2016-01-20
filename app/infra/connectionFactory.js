@@ -11,7 +11,7 @@ function createDbConnection(){
 		});
 	}
 
-	if (process.env.NODE_ENV = 'test'){
+	if (process.env.NODE_ENV == 'test' || process.env.NODE_ENV == 'production' ){
 		return connection = mysql.createConnection({
 			host: 'localhost',
 			user: 'root',
